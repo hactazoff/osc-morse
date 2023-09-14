@@ -1,0 +1,24 @@
+{
+  "name": "osc-morse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "dev": "npm run build && npm start",
+    "start": "cd ./dist/ && npx electron main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-osc": "^8.1.0",
+    "pastebin-js": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "electron": "^26.2.1"
+  }
+}

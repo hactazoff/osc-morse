@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.5">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>OSCMorse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background: transparent;
+        }
+    </style>
+    <script src="./script.js"></script>
+</head>
+
+<body class="bg-dark bg-gradient">
+    <div class="container-sm h-100 ">
+        <div class="row align-items-center h-100">
+            <div class="col rounded-4 shadow bg-body py-2 px-4 h-50 align-center text-center">
+                <h3>Transmission</h3>
+                <div id="out_group" class="row row-cols-3 align-items-center"></div>
+            </div>
+            <main class="col-8 rounded-4 shadow bg-body p-3 mx-1 h-75">
+                <div class="w-100 py-3 px-4 row align-items-center">
+                    <h1 class="position-relative text-center col">
+                        OSCMorse
+                    </h1>
+                    <div class="col-auto">
+                        <h2 id="status" class="badge rounded bg-secondary fs-4">Loading</h2>
+                    </div>
+                </div>
+            </main>
+            <div class="col rounded-4 shadow bg-body py-2 px-4 h-50 align-center text-center">
+                <h3>Reception</h3>
+                <div id="in_group" class="row row-cols-3 align-items-center"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
